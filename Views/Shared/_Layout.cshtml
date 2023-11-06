@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bet_Response_Pro</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Bet_Response_Pro.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href = "~/css/sidenavbar.css" />
+    <link rel="stylesheet" href = "~/css/topnavbar.css" />
+</head>
+<body>
+    
+    <div class="container-fluid col-12">
+        <div class = "sideNavBar">
+            <div>
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                <a href="@Url.Action("Privacy", "Home")">Privacy</a>
+            </div>
+        </div>
+        <div class = "topNavBar">
+            <h1>Bet Response Pro</h1>
+        </div>
+        <div class = "mainContent">
+            <div class="col">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

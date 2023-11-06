@@ -1,0 +1,63 @@
+﻿.unresolvedStatus {
+    border-color: red;
+    border-width: 2px;
+    background-color: #ffcccc;
+    height: 150px;
+}
+
+.unresolvedStatus h5, .unresolvedStatus p {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.resolvedStatus {
+    border-color: green;
+    border-width: 2px;
+    background-color: #ccffdd;
+    height: 150px;
+}
+
+.resolvedStatus h5, .resolvedStatus p {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.callingStatus {
+    border-color: orange;
+    border-width: 2px;
+    background-color: #ffebcc;
+    height: 150px;
+}
+
+.callingStatus h5, .callingStatus p {
+    display: inline;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.teamcard {
+    background-color: #FCFCFE;
+    border: 2px solid #F4F4F6;
+    color: #85848A;
+}
+
+.teamcard :hover {
+    background-color: #F0EEF1;
+    color: #2E2C2F;
+    cursor:pointer;
+}
+
+
+
+

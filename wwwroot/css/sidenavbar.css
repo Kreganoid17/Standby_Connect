@@ -1,0 +1,44 @@
+﻿.sideNavBar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    background-color: #FCFCFE;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 15px 20px 15px 20px;
+    border-right: 2px solid #F4F4F6;
+}
+
+.mainContent {
+    margin-left: 250px; /* Same as the width of the sidebar */
+}
+
+/* The navigation menu links */
+.sideNavBar a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #85848A;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideNavBar a:hover {
+    border-radius: 25px;
+    background-color: #F0EEF1;
+    color: #2E2C2F;
+}
+
+/* For the navbar heading  */
+.sideNavBarHeading {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: #85848A;
+    display: block;
+}
+
+
