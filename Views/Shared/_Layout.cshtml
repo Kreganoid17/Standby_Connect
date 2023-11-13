@@ -9,29 +9,40 @@
     <link rel="stylesheet" href="~/Bet_Response_Pro.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href = "~/css/sidenavbar.css" />
     <link rel="stylesheet" href = "~/css/topnavbar.css" />
+    <link rel="stylesheet" href = "~/css/maincontent.css" />
 </head>
 <body>
-    
-    <div class="container-fluid col-12">
-        <div class = "sideNavBar">
-            <div>
-                <a href="@Url.Action("Index", "Home")">Home</a>
-                <a href="@Url.Action("Privacy", "Home")">Privacy</a>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-5">
+            <div class="container-fluid">
+                <div class = "topNavBar">
+                    <div class="menu" onclick="openNav()">&#9776</div>
+                    <h1>Standby Connect</h1>
+                </div>
             </div>
-        </div>
-        <div class = "topNavBar">
-            <h1>Bet Response Pro</h1>
-        </div>
-        <div class = "mainContent">
-            <div class="col">
-                @RenderBody()
-            </div>
+        </nav>
+    </header>
+    <div class = "sideNavBar" id="sideNavBar">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br>
+            <br>
+            <br>
+            <a href="@Url.Action("Index", "Home")">Home</a>
+            <a href="@Url.Action("Privacy", "Home")">Privacy</a>
         </div>
     </div>
-
+    <div class = "mainContent" id="main">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+ 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<script src="~/scripts/burgerMenu.js"></script>

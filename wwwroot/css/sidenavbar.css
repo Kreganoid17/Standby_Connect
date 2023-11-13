@@ -1,16 +1,14 @@
 ﻿.sideNavBar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 250px; /* Set the width of the sidebar */
+    width: 0px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0;
+    left: 0;
     z-index: 1; /* Stay on top */
-    background-color: #FCFCFE;
+    background-color: #FFFFFF;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 15px 20px 15px 20px;
     border-right: 2px solid #F4F4F6;
-}
-
-.mainContent {
-    margin-left: 250px; /* Same as the width of the sidebar */
+    transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -41,4 +39,11 @@
     display: block;
 }
 
+.closebtn {
+    text-align: center;
+    font-size: 50px;
+    float: right;
+    width: 50px;
+    height: 50px;
+}
 

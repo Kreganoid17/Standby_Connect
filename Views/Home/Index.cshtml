@@ -9,32 +9,39 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Bet_Response_Pro.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/homepage.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
-<div class = "mt-5">
+<body>
+<div>
     <div class="container-fluid col-11">
         <div class = "row">
             <div class = "col">
                 <div class="card unresolvedStatus">
                     <div class="card-body">
-                        <h5 class="card-title">Unresolved: </h5>
-                        <p class="card-text">1</p>
+                        <div class="row align-middle h-100">
+                            <h5 class="card-title">Unresolved</h5>
+                            <p class="card-text">1</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class = "col">
                 <div class="card resolvedStatus">
                     <div class="card-body">
-                        <h5 class="card-title">Resolved: </h5>
-                        <p class="card-text">5</p>
+                        <div class="row align-middle h-100">
+                            <h5 class="card-title">Resolved</h5>
+                            <p class="card-text">5</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class = "col">
                 <div class="card callingStatus">
                     <div class="card-body">
-                        <h5 class="card-title">Calling: </h5>
-                        <p class="card-text">2</p>
+                        <div class="row align-middle h-100">
+                            <h5 class="card-title">Calling</h5>
+                            <p class="card-text">2</p>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -48,37 +55,182 @@
             <div class = "col">
                 <div class="card teamcard">
                     <div class="card-body">
-                        <h5 class="card-title">Team 1</h5>
+                        <h5 class="card-title mb-4">Team 1</h5>
+                        <div class = "row statuses">
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusunresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statuscalling"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="callbutton" onmousedown="call()">Call</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-2">
             <div class = "col">
                 <div class="card teamcard">
                     <div class="card-body">
-                        <h5 class="card-title">Team 2</h5>
+                        <h5 class="card-title mb-4">Team 2</h5>
+                        <div class = "row statuses">
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusunresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statuscalling"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                            <div class="col">
+                                <button class="callbutton" onmousedown="call()">Call</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-2">
             <div class = "col">
                 <div class="card teamcard">
                     <div class="card-body">
-                        <h5 class="card-title">Team 3</h5>
+                        <h5 class="card-title mb-4">Team 3</h5>
+                        <div class = "row statuses">
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusunresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statuscalling"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                            <div class="col">
+                                <button class="callbutton" onmousedown="call()">Call</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-2">
             <div class = "col">
                 <div class="card teamcard">
                     <div class="card-body">
-                        <h5 class="card-title">Team 4</h5>
+                        <h5 class="card-title mb-4">Team 4</h5>
+                        <div class = "row statuses">
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusunresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statusresolved"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = "col">
+                                <ul>
+                                    <li>
+                                        <div class = "statuscalling"></div>
+                                    </li>
+                                    <li>
+                                        <div>12</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                            <div class="col">
+                                <button class="callbutton" onmousedown="call()">Call</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</body>
+
+<script src="~/scripts/homepage.js"></script>

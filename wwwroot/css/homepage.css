@@ -47,17 +47,72 @@
 }
 
 .teamcard {
-    background-color: #FCFCFE;
+    background-color: #FFFFFF;
     border: 2px solid #F4F4F6;
     color: #85848A;
 }
 
-.teamcard :hover {
+.teamcard:hover {
     background-color: #F0EEF1;
     color: #2E2C2F;
     cursor:pointer;
 }
 
+body {
+    background-color: #e6f9ff;
+}
 
+.statusunresolved {
+    width: 20px;
+    height: 20px;
+    background-color: #FF6961;
+    border-radius: 10px;
+    margin-bottom:-4px;
+}
+
+.statusresolved {
+    width: 20px;
+    height: 20px;
+    background-color: #6fc276;
+    border-radius: 10px;
+    margin-bottom: -4px;
+}
+
+.statuscalling {
+    width: 20px;
+    height: 20px;
+    background-color: #FECB46;
+    border-radius: 10px;
+    margin-bottom: -4px;
+}
+
+ul li {
+    display:inline-block;
+    text-align:center
+}
+
+.callbutton {
+    float: right;
+    width: 100px;
+    height: 30px;
+    background-color: #ffcccc;
+    border-radius: 25px
+}
+
+.callbutton:active {
+    background-image: linear-gradient(to right, #fca5a5 0%, #fca5a5 50%, #fecaca 50%, #fecaca 100%);
+    background-size: 200px 30px;
+    background-position: 100%;
+    animation: 2s callConfirmation ease-out forwards;
+}
+
+@keyframes callConfirmation {
+    from {
+        background-position: 100%;
+    }
+    to {
+        background-position:0%;
+    }
+}
 
 
